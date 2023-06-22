@@ -12,10 +12,29 @@ namespace TranslationMergeApp
         {
             Console.WriteLine("Merge Start");
 
-            string sourceFile = "C:\\Learn\\Files\\Test\\TLSDeskResources.json";
-            string destinationFile = "C:\\Learn\\Files\\Test\\TLSDeskResources{zh-Hant}.json";
+            // Test Case 1
+            //string sourceFile = "C:\\Learn\\Files\\Test\\Resources.resx";
+            //string destinationFile = "C:\\Learn\\Files\\Test\\Resources.zh-Hans.resx";
 
-            JsonComparer.MergeJsonFiles(sourceFile, destinationFile);
+            //ResxComparer.MergeResxFiles(sourceFile, destinationFile);
+
+            // Test Case 2
+            //string sourceFile = "C:\\Learn\\Files\\Test\\TLSDeskResources.json";
+            //string destinationFile = "C:\\Learn\\Files\\Test\\TLSDeskResources{zh-Hant}.json";
+
+            //JsonComparer.MergeJsonFiles(sourceFile, destinationFile);
+
+            // Test Case 3
+            string resxFileName = "C:\\Learn\\Files\\Test\\Resources.zh-Hans.resx";
+            string jsonFileName = "C:\\projects\\signal\\TLPScheduler_Dev\\TLPConfSW\\Source\\Extron.RoomAgent.Main\\Resources\\Localization\\Languages\\Desks\\TLSDeskResources.es.json";
+            //StringOperations.GetFileName(resxFileName);
+            //StringOperations.GetFileName(jsonFileName);
+
+            StringOperations.GetName(resxFileName);
+            StringOperations.GetName(jsonFileName);
+
+            StringOperations.GetFormat(resxFileName);
+            StringOperations.GetFormat(jsonFileName);
 
             Console.WriteLine("Merge Fini");
         }
