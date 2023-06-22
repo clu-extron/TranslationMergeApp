@@ -70,5 +70,29 @@ namespace TranslationMergeApp
                 Console.WriteLine("Error: " + e.Message);
             }
         }
+
+        public static void GetDir(string directoryPath)
+        {
+            try
+            {
+                // Use regular expressions to extract the path part
+                string pathPattern = @"^(.*[\\/])";
+                Match match = Regex.Match(directoryPath, pathPattern);
+
+                if (match.Success)
+                {
+                    string path = match.Groups[1].Value;
+                    Console.WriteLine("Path: " + path);
+                }
+                else
+                {
+                    Console.WriteLine("Unable to extract the path from the file path.");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+            }
+        }
     }
 }

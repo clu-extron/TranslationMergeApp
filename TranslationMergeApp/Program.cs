@@ -36,6 +36,9 @@ namespace TranslationMergeApp
             StringOperations.GetFormat(resxFileName);
             StringOperations.GetFormat(jsonFileName);
 
+            StringOperations.GetDir(resxFileName);
+            StringOperations.GetDir(jsonFileName);
+
             Console.WriteLine("Merge Fini");
         }
     }
