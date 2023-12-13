@@ -59,6 +59,7 @@
     <Compile Include="ResxComparer.cs" />
     <Compile Include="ResxReaderTest.cs" />
     <Compile Include="StringOperations.cs" />
+    <Compile Include="XlfComparer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

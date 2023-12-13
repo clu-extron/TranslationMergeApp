@@ -13,13 +13,13 @@ namespace TranslationMergeApp
             Console.WriteLine("Merge Start");
 
             // Test Case 1
-            string sourceFile = "C:\\Learn\\Files\\Test\\EAF.Quantum.Main\\Resources.resx";
-            string destinationFile = "C:\\Learn\\Files\\Test\\EAF.Quantum.Main\\Resources.zh-Hans.resx";
+            string sourceFile = "C:\\Learn\\Files\\Test\\message.xlf";
+            string destinationFile = "C:\\Learn\\Files\\Test\\message.zh-Hans.xlf";
 
             //string sourceFile = "C:\\Learn\\Files\\Test\\EAF.VideoWall.Infrastructure\\Resources.zh-Hans.resx";
             //string destinationFile = "C:\\Learn\\Files\\Test\\EAF.VideoWall.Infrastructure\\Resources.resx";
 
-            ResxComparer.MergeResxFiles(sourceFile, destinationFile);
+            XlfComparer.MergeXlfFiles(sourceFile, destinationFile);
 
             // Test Case 2
             //string sourceFile = "C:\\Learn\\Files\\Test\\TLSDeskResources.json";
